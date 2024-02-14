@@ -2,9 +2,16 @@
 kotlin="1.9.22"
 gradle-build-config="5.3.5"
 detekt="1.23.5"
+kinference = "0.2.17"
+roberta-tokenizer = "1.0.6"
 
 [libraries]
+# Core
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+
+# ML
+kinference = { module = "io.kinference:inference-ort", version.ref = "kinference" }
+roberta-tokenizer = { module = "cloud.genesys:roberta-tokenizer", version.ref = "roberta-tokenizer"}
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
