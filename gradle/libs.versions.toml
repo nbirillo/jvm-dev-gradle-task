@@ -1,0 +1,12 @@
+[versions]
+kotlin="1.9.22"
+gradle-build-config="5.3.5"
+detekt="1.23.5"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+gradle-build-config-plugin = { id = "com.github.gmazzo.buildconfig", version.ref = "gradle-build-config"}
+detekt-plugin = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt"}
