@@ -6,7 +6,6 @@ import java.io.File
 
 
 object RobertaTokenizerBuilder {
-    val tokenizerPath = getPath()
     private val resources = listOf("merges.txt", "base_vocabulary.json", "vocabulary.json")
 
     // 1. Find all three files in resources (all of them exist)
@@ -28,6 +27,6 @@ object RobertaTokenizerBuilder {
 fun buildRobertaTokenizer() =
     RobertaTokenizer(
         RobertaTokenizerResources(
-            RobertaTokenizerBuilder.tokenizerPath
+            RobertaTokenizerBuilder.getPath()
         )
     )

@@ -39,7 +39,7 @@ allprojects {
 
     dependencies {
         testImplementation(rootProject.libs.kotlin.test)
-        implementation(rootProject.libs.kinference)
+        api(rootProject.libs.kinference)
         implementation(rootProject.libs.roberta.tokenizer)
     }
 
